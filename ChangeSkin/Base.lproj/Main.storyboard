@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,8 +20,48 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TfN-2e-KSR">
+                                <rect key="frame" x="207.5" y="60" width="127.5" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xnh-Yg-KmZ">
+                                <rect key="frame" x="40" y="220" width="127.5" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ljZ-Rg-i0U">
+                                <rect key="frame" x="207.5" y="220" width="127.5" height="120"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n4B-Sw-3YT">
+                                <rect key="frame" x="40" y="60" width="127.5" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="oU2-WQ-80O"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xnh-Yg-KmZ" firstAttribute="height" secondItem="n4B-Sw-3YT" secondAttribute="height" id="FO0-PZ-VqQ"/>
+                            <constraint firstItem="TfN-2e-KSR" firstAttribute="leading" secondItem="n4B-Sw-3YT" secondAttribute="trailing" constant="40" id="Fr0-K3-iZQ"/>
+                            <constraint firstItem="TfN-2e-KSR" firstAttribute="height" secondItem="n4B-Sw-3YT" secondAttribute="height" id="GHA-B5-LFX"/>
+                            <constraint firstItem="Xnh-Yg-KmZ" firstAttribute="leading" secondItem="n4B-Sw-3YT" secondAttribute="leading" id="JvR-kk-Rsl"/>
+                            <constraint firstItem="n4B-Sw-3YT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="M4j-ko-hix"/>
+                            <constraint firstItem="ljZ-Rg-i0U" firstAttribute="height" secondItem="TfN-2e-KSR" secondAttribute="height" id="QK1-cE-Vwx"/>
+                            <constraint firstAttribute="trailing" secondItem="TfN-2e-KSR" secondAttribute="trailing" constant="40" id="TK5-GT-Sgz"/>
+                            <constraint firstItem="TfN-2e-KSR" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="UZr-D6-Dhc"/>
+                            <constraint firstItem="ljZ-Rg-i0U" firstAttribute="width" secondItem="TfN-2e-KSR" secondAttribute="width" id="Uqq-mn-gTB"/>
+                            <constraint firstItem="ljZ-Rg-i0U" firstAttribute="trailing" secondItem="TfN-2e-KSR" secondAttribute="trailing" id="boF-mh-0f2"/>
+                            <constraint firstItem="n4B-Sw-3YT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="40" id="dmJ-kp-qGl"/>
+                            <constraint firstItem="Xnh-Yg-KmZ" firstAttribute="width" secondItem="n4B-Sw-3YT" secondAttribute="width" id="fca-nP-JWp"/>
+                            <constraint firstItem="ljZ-Rg-i0U" firstAttribute="top" secondItem="TfN-2e-KSR" secondAttribute="bottom" constant="40" id="j8w-XW-UOT"/>
+                            <constraint firstItem="Xnh-Yg-KmZ" firstAttribute="top" secondItem="n4B-Sw-3YT" secondAttribute="bottom" constant="40" id="mDn-uO-izk"/>
+                            <constraint firstItem="TfN-2e-KSR" firstAttribute="width" secondItem="n4B-Sw-3YT" secondAttribute="width" id="r3I-6U-eHT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView1" destination="n4B-Sw-3YT" id="4Si-GH-wJa"/>
+                        <outlet property="imageView2" destination="TfN-2e-KSR" id="m3i-4t-Pmp"/>
+                        <outlet property="imageView3" destination="Xnh-Yg-KmZ" id="VaC-jP-0TI"/>
+                        <outlet property="imageView4" destination="ljZ-Rg-i0U" id="huh-bq-Gh2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

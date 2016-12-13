@@ -13,9 +13,16 @@
 		D723BAEB1DFE7C5800A61739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D723BAE91DFE7C5800A61739 /* Main.storyboard */; };
 		D723BAED1DFE7C5800A61739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D723BAEC1DFE7C5800A61739 /* Assets.xcassets */; };
 		D723BAF01DFE7C5800A61739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D723BAEE1DFE7C5800A61739 /* LaunchScreen.storyboard */; };
+		D723BAF81DFE7CAD00A61739 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D723BAF71DFE7CAD00A61739 /* Podfile */; };
+		D723BAFC1DFE7EE800A61739 /* ChangeSkinService.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BAFB1DFE7EE800A61739 /* ChangeSkinService.m */; };
+		D723BAFF1DFEF7F100A61739 /* UIImage+ChangeSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = D723BAFE1DFEF7F100A61739 /* UIImage+ChangeSkin.m */; };
+		E485EAD98C811791341AE770 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A3A83EA540664B7E1DB538 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20FC81F250AD8F073F855DBC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		24A3A83EA540664B7E1DB538 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72EF18C345915902125A2F18 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D723BADD1DFE7C5800A61739 /* ChangeSkin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChangeSkin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D723BAE11DFE7C5800A61739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D723BAE31DFE7C5800A61739 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +33,11 @@
 		D723BAEC1DFE7C5800A61739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D723BAEF1DFE7C5800A61739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D723BAF11DFE7C5800A61739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D723BAF71DFE7CAD00A61739 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D723BAFA1DFE7EE800A61739 /* ChangeSkinService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeSkinService.h; sourceTree = "<group>"; };
+		D723BAFB1DFE7EE800A61739 /* ChangeSkinService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeSkinService.m; sourceTree = "<group>"; };
+		D723BAFD1DFEF7F100A61739 /* UIImage+ChangeSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ChangeSkin.h"; sourceTree = "<group>"; };
+		D723BAFE1DFEF7F100A61739 /* UIImage+ChangeSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ChangeSkin.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +45,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E485EAD98C811791341AE770 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9E0CC0D202C0A729B8A305F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				24A3A83EA540664B7E1DB538 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C559F8E5C47453B8E2C06EF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				20FC81F250AD8F073F855DBC /* Pods.debug.xcconfig */,
+				72EF18C345915902125A2F18 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D723BAD41DFE7C5800A61739 = {
 			isa = PBXGroup;
 			children = (
+				D723BAF71DFE7CAD00A61739 /* Podfile */,
 				D723BADF1DFE7C5800A61739 /* ChangeSkin */,
 				D723BADE1DFE7C5800A61739 /* Products */,
+				C559F8E5C47453B8E2C06EF5 /* Pods */,
+				9E0CC0D202C0A729B8A305F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +91,7 @@
 		D723BADF1DFE7C5800A61739 /* ChangeSkin */ = {
 			isa = PBXGroup;
 			children = (
+				D723BAF91DFE7E9200A61739 /* ChangeSkin */,
 				D723BAE31DFE7C5800A61739 /* AppDelegate.h */,
 				D723BAE41DFE7C5800A61739 /* AppDelegate.m */,
 				D723BAE61DFE7C5800A61739 /* ViewController.h */,
@@ -79,6 +113,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D723BAF91DFE7E9200A61739 /* ChangeSkin */ = {
+			isa = PBXGroup;
+			children = (
+				D723BAFA1DFE7EE800A61739 /* ChangeSkinService.h */,
+				D723BAFB1DFE7EE800A61739 /* ChangeSkinService.m */,
+				D723BAFD1DFEF7F100A61739 /* UIImage+ChangeSkin.h */,
+				D723BAFE1DFEF7F100A61739 /* UIImage+ChangeSkin.m */,
+			);
+			path = ChangeSkin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +131,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D723BAF41DFE7C5800A61739 /* Build configuration list for PBXNativeTarget "ChangeSkin" */;
 			buildPhases = (
+				1617016D8CBBC68B858A2EB5 /* Check Pods Manifest.lock */,
 				D723BAD91DFE7C5800A61739 /* Sources */,
 				D723BADA1DFE7C5800A61739 /* Frameworks */,
 				D723BADB1DFE7C5800A61739 /* Resources */,
+				F2E18415A3243269E5FF9D27 /* Embed Pods Frameworks */,
+				1FA550DDC46DC4671DBFB38F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,8 +158,8 @@
 				TargetAttributes = {
 					D723BADC1DFE7C5800A61739 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 6H654XDQ2V;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = J56NWSKHS7;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -140,19 +188,70 @@
 			files = (
 				D723BAF01DFE7C5800A61739 /* LaunchScreen.storyboard in Resources */,
 				D723BAED1DFE7C5800A61739 /* Assets.xcassets in Resources */,
+				D723BAF81DFE7CAD00A61739 /* Podfile in Resources */,
 				D723BAEB1DFE7C5800A61739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1617016D8CBBC68B858A2EB5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1FA550DDC46DC4671DBFB38F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E18415A3243269E5FF9D27 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D723BAD91DFE7C5800A61739 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D723BAFF1DFEF7F100A61739 /* UIImage+ChangeSkin.m in Sources */,
 				D723BAE81DFE7C5800A61739 /* ViewController.m in Sources */,
 				D723BAE51DFE7C5800A61739 /* AppDelegate.m in Sources */,
+				D723BAFC1DFE7EE800A61739 /* ChangeSkinService.m in Sources */,
 				D723BAE21DFE7C5800A61739 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,25 +368,31 @@
 		};
 		D723BAF51DFE7C5800A61739 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20FC81F250AD8F073F855DBC /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6H654XDQ2V;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = ChangeSkin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.ChangeSkin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenric.ChangeSkin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Debug;
 		};
 		D723BAF61DFE7C5800A61739 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72EF18C345915902125A2F18 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6H654XDQ2V;
+				DEVELOPMENT_TEAM = J56NWSKHS7;
 				INFOPLIST_FILE = ChangeSkin/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lecarx.ChangeSkin;
+				PRODUCT_BUNDLE_IDENTIFIER = com.agenric.ChangeSkin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "91e6ccac-da55-4367-b2f8-2619a15dac68";
+				PROVISIONING_PROFILE_SPECIFIER = Wildcard_Dev_Profile;
 			};
 			name = Release;
 		};
@@ -310,6 +415,7 @@
 				D723BAF61DFE7C5800A61739 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

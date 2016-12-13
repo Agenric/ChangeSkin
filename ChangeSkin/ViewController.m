@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *imageView1;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView2;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView3;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView4;
 
 @end
 
@@ -16,14 +20,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.imageView1 setImage:[UIImage imageNamed:@"image1"]];
+    [self.imageView2 setImage:[UIImage imageNamed:@"image2"]];
+    [self.imageView3 setImage:[UIImage imageNamed:@"image3"]];
+    [self.imageView4 setImage:[UIImage imageNamed:@"image4"]];
+    
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
