@@ -19,7 +19,7 @@
 
 + (nullable UIImage *)changeSkin_imageNamed:(NSString *)name {
     if ([ChangeSkinService sharedInstance].isShouldChangeSkin) {
-        NSString *path=[[[ChangeSkinService sharedInstance] resourceFile] stringByAppendingPathComponent:[NSString stringWithFormat:@"cs_%@@2x.png",name]];
+        NSString *path=[[[ChangeSkinService sharedInstance] resourceFile] stringByAppendingPathComponent:[NSString stringWithFormat:@"%@@2x.png",name]];
         UIImage *image = [UIImage imageWithContentsOfFile:path];
         return image != nil ? image : [UIImage changeSkin_imageNamed:name];
     } else {
